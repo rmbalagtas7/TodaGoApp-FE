@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import { LoadingController } from '@ionic/angular';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -7,6 +8,16 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private loadingCtrl: LoadingController, private router: Router) { }
+
+  async onClick() {
+    const loading = await this.loadingCtrl.create({
+      duration: 3000,
+    });
+
+    loading.present();
+
+
+  }
 
 }

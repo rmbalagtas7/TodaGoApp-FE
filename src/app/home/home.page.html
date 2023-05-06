@@ -3,8 +3,16 @@
   <div class="container">
     <img src="https://play-lh.googleusercontent.com/NSwGnVGHMPKTKS90-JXuxTCzoLIRg_T-HQfxolv0hR9vPpwwrx5PU-dAQQSMXJisCjI"
       alt="" class="logo">
-  </div>
-  <ion-loading isOpen="true" [duration]="3000" spinner="circles">
 
-  </ion-loading>
+
+  </div>
+
 </ion-content>
+
+<ion-footer no-shadow class="ion-no-border">
+  <ion-toolbar position="bottom">
+    <ion-button (click)="onClick()" expand="block" shape="full">
+      Get Started
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
